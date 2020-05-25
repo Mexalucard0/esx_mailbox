@@ -2,10 +2,10 @@ create table mail
 (
     id       int auto_increment
         primary key,
-    titel    text not null,
+    title    text not null,
     text     text not null,
     footer   text not null,
-    gesendet date not null,
+    data date not null,
     autor    text not null,
     unread   int  not null,
     dbid     int  null
