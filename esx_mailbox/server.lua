@@ -2,10 +2,6 @@ local ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
----------------------------------------------
------------------ Functions -----------------
----------------------------------------------
-
 RegisterServerEvent('GS_cassetta:setTitle')
 AddEventHandler('GS_cassetta:setTitle', function(title, dbid)
 
@@ -47,10 +43,6 @@ AddEventHandler('GS_cassetta:delete', function(id)
 	MySQL.Async.execute('DELETE FROM `mail` WHERE `mail`.`id` = "' .. id .. '"', {}, function(rowsChanged) end)
 	
 end)
-
----------------------------------------------
------------------------------- Callbacks ---- 
----------------------------------------------
 
 ESX.RegisterServerCallback('GS_cassetta:getTitle', function(source, cb, dbid)
 	MySQL.Async.fetchScalar('SELECT value FROM mail_setting WHERE `key` = "title" AND dbid = ' .. dbid .. '', {}, function(title)
