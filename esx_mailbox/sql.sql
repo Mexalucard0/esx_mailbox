@@ -31,3 +31,10 @@ INSERT INTO mail_setting (id, `key`, value, dbid) VALUES
 (4, 'title', 'Mechanic', 1);
 
 ;
+
+INSERT INTO `items` (`name`,`label`,`weight`) VALUES
+	('cspolice', 'Mailbox key - police', 1),
+	('csarmory', 'Mailbox key - armory', 1),
+	('csconc', 'Mailbox key - cardealer', 1),
+	('csmec', 'Mailbox key - mechanic', 1)
+;
