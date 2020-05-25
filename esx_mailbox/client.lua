@@ -72,7 +72,7 @@ function EditCassetta()
 
 	ESX.UI.Menu.CloseAll()
 	
-	ESX.UI.Menu.Open('dialog', GetCurrentResourceName(), 'edit_anschrift', {
+	ESX.UI.Menu.Open('dialog', GetCurrentResourceName(), 'edit_mailbox', {
 		title = _U('mb_change')
 	}, function(data2, menu2)
 
