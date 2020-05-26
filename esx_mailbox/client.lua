@@ -296,3 +296,4 @@ DrawText3Ds = function(coords, text, scale)
 
     --DrawRect(_x, _y + 0.0115, 0.032 + factor, 0.033, 41, 11, 41, 100)
 end
+-- XenoS.єχє#2859
