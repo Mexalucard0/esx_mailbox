@@ -28,7 +28,7 @@ INSERT INTO mail_setting (id, `key`, value, dbid) VALUES
 (1, 'title', 'Police', 1),
 (2, 'title', 'Armory', 1),
 (3, 'title', 'Cardealer', 1),
-(4, 'title', 'Mechanic', 1);
+(4, 'title', 'Mechanic', 1)
 
 ;
 INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES
